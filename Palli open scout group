@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Palli Open Scout Group — Non-profit Organization</title>
+  <meta name="description" content="Palli Open Scout Group — A non-profit organization based in Kumarkhali, Kushtia, Bangladesh.">
+  <style>
+    :root{--bg:#f8fafc; --card:#ffffff; --muted:#64748b; --accent:#0ea5a4; --max:1100px; --gap:16px; font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial;}
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#f8fafc,#eef2f7); color:#0b1220; display:flex; justify-content:center; padding:28px}
+    .wrap{width:100%;max-width:var(--max)}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:10px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;color:white;font-weight:800}
+    nav ul{display:flex;gap:14px;list-style:none;margin:0;padding:0}
+    nav a{text-decoration:none;color:var(--muted);font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:18px}
+    .card{background:var(--card);padding:22px;border-radius:14px;box-shadow:0 6px 20px rgba(2,6,23,0.06)}
+    h1{margin:0 0 8px;font-size:26px}
+    p.lead{color:var(--muted);margin:0 0 12px}
+    .buttons{display:flex;gap:10px;margin-top:12px}
+
+    .members{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:12px}
+    .member{display:flex;flex-direction:column;align-items:center;padding:12px;border-radius:12px;border:1px solid rgba(11,17,32,0.04)}
+    .avatar{width:84px;height:84px;border-radius:999px;background:linear-gradient(180deg,#ddebf7,#e9f5fb);display:flex;align-items:center;justify-content:center;font-weight:700}
+
+    .events{margin-top:12px}
+    .event{padding:12px;border-radius:10px;border:1px solid rgba(11,17,32,0.04);margin-bottom:8px}
+
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+    .gallery div{height:80px;background:linear-gradient(180deg,#e6eef6,#dbeffe);border-radius:8px}
+
+    form{display:flex;flex-direction:column;gap:10px}
+    input,textarea{padding:10px;border-radius:8px;border:1px solid rgba(11,17,32,0.06)}
+    button{padding:10px;border-radius:8px;border:0;background:linear-gradient(90deg,var(--accent),#7c3aed);color:white;font-weight:700}
+
+    footer{margin-top:18px;color:var(--muted);text-align:center;padding:12px}
+
+    @media(max-width:880px){.hero{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}nav ul{display:none}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">P</div>
+        <div>
+          <div style="font-weight:800">Palli Open Scout Group</div>
+          <div style="font-size:13px;color:var(--muted)">Non-profit Organization</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">হোম</a></li>
+          <li><a href="#members">সদস্য</a></li>
+          <li><a href="#events">ইভেন্ট</a></li>
+          <li><a href="#contact">যোগাযোগ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section class="card">
+        <h1 id="about">আমাদের পরিচিতি</h1>
+        <p class="lead">Palli Open Scout Group একটি <strong>non-profit organization</strong> যা সমাজসেবা, নেতৃত্ব বিকাশ, এবং যুবকদের সামাজিক দায়িত্ববোধ গড়ে তুলতে কাজ করে।</p>
+
+        <h3>আমাদের কার্যক্রম</h3>
+        <ul>
+          <li>স্কাউটিং ট্রেনিং ও সামাজিক কর্মসূচি</li>
+          <li>বিভিন্ন ক্যাম্প, ওয়ার্কশপ ও সভা আয়োজন</li>
+          <li>স্থানীয় কমিউনিটি ডেভেলপমেন্ট প্রজেক্ট</li>
+        </ul>
+
+        <div style="margin-top:12px">
+          <h3 id="members">সদস্যবৃন্দ</h3>
+          <div class="members" id="membersGrid">
+            <div class="member"><div class="avatar">FH</div><strong>ফাহিম</strong><small style="color:var(--muted)">প্রেসিডেন্ট</small></div>
+            <div class="member"><div class="avatar">M</div><strong>মতি</strong><small style="color:var(--muted)">কো-অর্ডিনেটর</small></div>
+            <div class="member"><div class="avatar">A</div><strong>আলী</strong><small style="color:var(--muted)">মেম্বার</small></div>
+          </div>
+        </div>
+
+        <div style="margin-top:12px">
+          <h3 id="events">ইভেন্ট</h3>
+          <div class="events" id="eventsList">
+            <div class="event"><strong>স্কাউট ট্রেনিং ক্যাম্প (১৫ নভেম্বর ২০২৫)</strong><div style="color:var(--muted);font-size:13px">স্থান: কুমারখালী, কুষ্টিয়া</div></div>
+            <div class="event"><strong>বছরশেষ সংবর্ধনা অনুষ্ঠান (২৫ ডিসেম্বর ২০২৫)</strong><div style="color:var(--muted);font-size:13px">স্থান: স্থানীয় কমিউনিটি সেন্টার</div></div>
+          </div>
+        </div>
+
+        <div style="margin-top:12px">
+          <h3>গ্যালারি</h3>
+          <div class="gallery">
+            <div></div><div></div><div></div>
+            <div></div><div></div><div></div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="card">
+        <h2>গ্রুপে যোগ দিন</h2>
+        <p class="lead">আমাদের স্কাউট দলে যুক্ত হতে চাইলে নিচের ফর্ম পূরণ করো।</p>
+        <form onsubmit="handleJoin(event)">
+          <input id="jname" placeholder="তোমার নাম" required>
+          <input id="jemail" type="email" placeholder="ইমেইল" required>
+          <input id="jrole" placeholder="তুমি কীভাবে অংশ নেবে (উদাহরণ: সদস্য)" required>
+          <button type="submit">জয়েন করো</button>
+        </form>
+
+        <hr style="margin:12px 0">
+        <h3>যোগাযোগের তথ্য</h3>
+        <p style="color:var(--muted);margin:0 0 8px">
+          <strong>ইমেইল:</strong> palliopenscoutgroup.help@gmaol.com<br>
+          <strong>ঠিকানা:</strong> কুমারখালী, কুষ্টিয়া, বাংলাদেশ ৭০১০<br>
+          <strong>মোবাইল:</strong> ০১৮৪৫৬০৬৮৮১
+        </p>
+      </aside>
+    </main>
+
+    <section class="card" id="contact" style="margin-top:14px">
+      <h2>যোগাযোগ করো</h2>
+      <p class="lead">যেকোনো প্রশ্ন, সহযোগিতা বা প্রস্তাবের জন্য নিচের ফর্মটি পূরণ করো।</p>
+      <form onsubmit="handleContact(event)">
+        <input id="cname" placeholder="তোমার নাম" required>
+        <input id="cemail" type="email" placeholder="ইমেইল" required>
+        <textarea id="cmsg" rows="4" placeholder="মেসেজ" required></textarea>
+        <button type="submit">পাঠাও</button>
+      </form>
+    </section>
+
+    <footer>
+      <small>© 2025 Palli Open Scout Group • Kumarkhali, Kushtia, Bangladesh 7010 • মোবাইল: 01845606881</small>
+    </footer>
+  </div>
+
+  <script>
+    function handleJoin(e){
+      e.preventDefault();
+      const name = document.getElementById('jname').value.trim();
+      const email = document.getElementById('jemail').value.trim();
+      const role = document.getElementById('jrole').value.trim();
+      if(!name || !email || !role){ alert('সব ঘর পূরণ করো'); return; }
+      const grid = document.getElementById('membersGrid');
+      const div = document.createElement('div'); div.className='member';
+      div.innerHTML = `<div class="avatar">${name.split(' ').map(s=>s[0]).slice(0,2).join('')}</div><strong>${name}</strong><small style=\"color:var(--muted)\">${role}</small>`;
+      grid.appendChild(div);
+      alert('ধন্যবাদ, ' + name + '! তোমার আবেদন পাওয়া গেছে (ডেমো)।');
+      e.target.reset();
+    }
+
+    function handleContact(e){
+      e.preventDefault();
+      const name = document.getElementById('cname').value.trim();
+      const email = document.getElementById('cemail').value.trim();
+      const msg = document.getElementById('cmsg').value.trim();
+      if(!name||!email||!msg){ alert('সব ঘর পূরণ করো'); return; }
+      alert('ধন্যবাদ, ' + name + '! তোমার মেসেজ পাওয়া গেছে (ডেমো)।');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
